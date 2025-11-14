@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.glow {
+  font-size: 3em;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #00f7ff; }
+  to { text-shadow: 0 0 20px #00f7ff, 0 0 30px #00f7ff; }
+}
+
+.tagline {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #a0e7ff;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #000;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #00f7ff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #fff;
+  color: #00f7ff;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.emoji-trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  pointer-events: none;
+  z-index: 999;
+}
